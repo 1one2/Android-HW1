@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.FirstFragment">
+    tools:context=".fragments.SecondFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvFragment1"
+        android:id="@+id/tvFragment2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="1st Fragment from 1st Activity"
+        android:text="1st Fragment from 2nd Activity"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,16 +21,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnTo2ndActivity"
+        android:id="@+id/btnTo2ndFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Add 2nd Fragment"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFragment1"
-        android:text="Press me for 2nd Activity"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:onClick="to2ndActivity"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/tvFragment2"
+        android:onClick="to2ndFragment"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
